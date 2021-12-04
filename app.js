@@ -13,7 +13,7 @@ const slackSecret = process.env.SLACK_SECRET
 const app = new App({
    token: botToken,
    signingSecret: slackSecret,
-   socketMode: false,
+   socketMode: true,
  });
  
  app.command("/test", async ({ command, ack, say }) => {
