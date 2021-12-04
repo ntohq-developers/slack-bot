@@ -1,0 +1,162 @@
+{
+   data: [
+      {
+       url: 'https: //api.github.com/repos/Sergix/analyst/issues/20',
+       repository_url: 'https: //api.github.com/repos/Sergix/analyst',
+       labels_url: 'https: //api.github.com/repos/Sergix/analyst/issues/20/labels{/name}',
+       comments_url: 'https: //api.github.com/repos/Sergix/analyst/issues/20/comments',
+       events_url: 'https: //api.github.com/repos/Sergix/analyst/issues/20/events',
+       html_url: 'https: //github.com/Sergix/analyst/issues/20',
+       id: 835091425,
+       node_id: 'MDU6SXNzdWU4MzUwOTE0MjU=',
+       number: 20,
+       title: 'Live Chart',
+       user: [Object
+         ],
+       labels: [Array
+         ],
+       state: 'open',
+       locked: false,
+       assignee: [Object
+         ],
+       assignees: [Array
+         ],
+       milestone: null,
+       comments: 0,
+       created_at: '2021-03-18T17: 43: 08Z',
+       updated_at: '2021-03-18T17: 43: 08Z',
+       closed_at: null,
+       author_association: 'COLLABORATOR',
+       active_lock_reason: null,
+       body: '## Prop: It was recommended to add a live chart that updates itself with new data that comes in every minute.\r\n' +
+         '\r\n' +
+         '### Goal: Add live functions to start updating the apex chart.',
+       reactions: [Object
+         ],
+       timeline_url: 'https: //api.github.com/repos/Sergix/analyst/issues/20/timeline',
+       performed_via_github_app: null
+      },
+      {
+       url: 'https: //api.github.com/repos/Sergix/analyst/issues/19',
+       repository_url: 'https: //api.github.com/repos/Sergix/analyst',
+       labels_url: 'https: //api.github.com/repos/Sergix/analyst/issues/19/labels{/name}',
+       comments_url: 'https: //api.github.com/repos/Sergix/analyst/issues/19/comments',
+       events_url: 'https: //api.github.com/repos/Sergix/analyst/issues/19/events',
+       html_url: 'https: //github.com/Sergix/analyst/issues/19',
+       id: 833890486,
+       node_id: 'MDU6SXNzdWU4MzM4OTA0ODY=',
+       number: 19,
+       title: 'Clean Up Index.vue',
+       user: [Object
+         ],
+       labels: [Array
+         ],
+       state: 'open',
+       locked: false,
+       assignee: [Object
+         ],
+       assignees: [Array
+         ],
+       milestone: null,
+       comments: 0,
+       created_at: '2021-03-17T15: 08: 38Z',
+       updated_at: '2021-03-17T15: 08: 52Z',
+       closed_at: null,
+       author_association: 'COLLABORATOR',
+       active_lock_reason: null,
+       body: '# Clean Up Code\r\n' +
+         '\r\n' +
+         '### Goal\r\n' +
+         '* Clean up code in index.vue to create a more readable page\r\n' +
+         '\r\n' +
+         '### How?\r\n' +
+         '* By sorting code \r\n' +
+         '* By creating more components\r\n',
+       reactions: [Object
+         ],
+       timeline_url: 'https: //api.github.com/repos/Sergix/analyst/issues/19/timeline',
+       performed_via_github_app: null
+      },
+      {
+       url: 'https: //api.github.com/repos/Sergix/analyst/issues/13',
+       repository_url: 'https: //api.github.com/repos/Sergix/analyst',
+       labels_url: 'https: //api.github.com/repos/Sergix/analyst/issues/13/labels{/name}',
+       comments_url: 'https: //api.github.com/repos/Sergix/analyst/issues/13/comments',
+       events_url: 'https: //api.github.com/repos/Sergix/analyst/issues/13/events',
+       html_url: 'https: //github.com/Sergix/analyst/issues/13',
+       id: 738073761,
+       node_id: 'MDU6SXNzdWU3MzgwNzM3NjE=',
+       number: 13,
+       title: 'Incorrect chart labeling',
+       user: [Object
+         ],
+       labels: [Array
+         ],
+       state: 'open',
+       locked: false,
+       assignee: [Object
+         ],
+       assignees: [Array
+         ],
+       milestone: null,
+       comments: 0,
+       created_at: '2020-11-06T22: 15: 13Z',
+       updated_at: '2021-03-07T04: 06: 25Z',
+       closed_at: null,
+       author_association: 'COLLABORATOR',
+       active_lock_reason: null,
+       body: '**Depending** on the period and the interval, the chart labeling is incorrect.\r\n' +
+         " When using the candlestick chart we see that the open, close, high, low dose not display on the pop-up label; the chart's labeling -on the x-axis - incorrect; and the actual chart name could be something like Microsoft corp instead of Candlestick chart.\r\n" +
+         '![image
+         ](https: //user-images.githubusercontent.com/11604664/98419095-f3ce0a00-2049-11eb-93fd-13f8379dfeac.png)\r\n' +
+         '\r\n' +
+         '\r\n' +
+         'As for the line chart, It looks great except for chart labeling -on the x-axis- and the chart name\r\n' +
+         '![image
+         ](https: //user-images.githubusercontent.com/11604664/98419646-24fb0a00-204b-11eb-8899-5acec88a7ed0.png)\r\n',
+       reactions: [Object
+         ],
+       timeline_url: 'https: //api.github.com/repos/Sergix/analyst/issues/13/timeline',
+       performed_via_github_app: null
+      },
+      {
+       url: 'https: //api.github.com/repos/Sergix/analyst/issues/12',
+       repository_url: 'https: //api.github.com/repos/Sergix/analyst',
+       labels_url: 'https: //api.github.com/repos/Sergix/analyst/issues/12/labels{/name}',
+       comments_url: 'https: //api.github.com/repos/Sergix/analyst/issues/12/comments',
+       events_url: 'https: //api.github.com/repos/Sergix/analyst/issues/12/events',
+       html_url: 'https: //github.com/Sergix/analyst/issues/12',
+       id: 738070801,
+       node_id: 'MDU6SXNzdWU3MzgwNzA4MDE=',
+       number: 12,
+       title: 'Crazy chart scaling',
+       user: [Object
+         ],
+       labels: [Array
+         ],
+       state: 'open',
+       locked: false,
+       assignee: [Object
+         ],
+       assignees: [Array
+         ],
+       milestone: null,
+       comments: 0,
+       created_at: '2020-11-06T22: 08: 08Z',
+       updated_at: '2021-03-07T04: 06: 49Z',
+       closed_at: null,
+       author_association: 'COLLABORATOR',
+       active_lock_reason: null,
+       body: 'Zoomed in to much\r\n' +
+         '![image
+         ](https: //user-images.githubusercontent.com/11604664/98419095-f3ce0a00-2049-11eb-93fd-13f8379dfeac.png)\r\n' +
+         'Zoomed-out\r\n' +
+         '![image
+         ](https: //user-images.githubusercontent.com/11604664/98419145-0a746100-204a-11eb-8f1b-030f715072ab.png)',
+       reactions: [Object
+         ],
+       timeline_url: 'https: //api.github.com/repos/Sergix/analyst/issues/12/timeline',
+       performed_via_github_app: null
+      }
+   ]
+}
