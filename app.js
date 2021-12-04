@@ -28,7 +28,7 @@ app.command('/issue', async ({ command, ack, respond }) => {
       repo: command.text,
    })).data
    console.log(repoIssue)
-   await respond(repoIssue[0].url);
+   await respond(repoIssue);
 });
 
 
