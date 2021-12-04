@@ -29,7 +29,7 @@ app.command('/issue', async ({ command, ack, respond }) => {
    }).then((issues) => {
       return issues.data[0].url
    }).then((data) => {
-      await respond(data);
+      respond(data);
    })
 });
 
