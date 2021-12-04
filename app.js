@@ -21,7 +21,7 @@ app.command('/issue', async ({ command, ack, respond }) => {
    await ack().then(() => {
       return commands.splitArgs(command.text)
    }).then((data) => {
-      data = JSON.stringify(github.getReposIssues(data[0], data[1]))
+      data = github.getReposIssues(data[0], data[1])
       console.log(data)
       return data
    });
