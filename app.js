@@ -14,18 +14,20 @@ const app = new App({
 });
 
 
+
+// The echo command simply echoes on command
+app.command('/test', async ({ command, ack, respond }) => {
+   // Acknowledge command request
+   await ack();
+ 
+   await respond(`From: ${command.user_name} Message: ${command.text}`);
+ });
+ 
+ 
+
+
 (async () => {
    // Start your app
    await app.start();
    console.log(`⚡️ Slack Bolt app is running!`);
 })();
-
-// This will match any message that contains 👋
-app.message(':wave:', async ({ message, say }) => {
-   await say(`Hello, <@${message.user}>`);
-});
- 
-app.error((error) => {
-   // Check the details of the error to handle cases where you should retry sending a message or stop the app
-   console.error(error);
-});
