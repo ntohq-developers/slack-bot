@@ -15,7 +15,7 @@ const app = new App({
    signingSecret: slackSecret,
  });
  
- app.command("/knowledge", async ({ command, ack, say }) => {
+ app.command("/test", async ({ command, ack, say }) => {
    try {
      await ack();
      say("Yaaay! that command works!");
