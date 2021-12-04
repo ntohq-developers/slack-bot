@@ -13,6 +13,7 @@ const slackSecret = process.env.SLACK_SECRET
 const app = new App({
    token: botToken,
    signingSecret: slackSecret,
+   socketMode: false,
  });
  
  app.command("/test", async ({ command, ack, say }) => {
@@ -28,6 +29,7 @@ const app = new App({
 
  (async () => {
    const port = process.env.PORT || 3000
+   
    // Start your app
    await app.start(process.env.PORT || port);
    console.log(`⚡️ Slack Bolt app is running on port ${port}!`);
