@@ -1,13 +1,12 @@
 const { Octokit }  = require("@octokit/rest");
 
-
 const octokit = new Octokit({
    userAgent: 'slack bot v1.0.0',
    baseUrl: 'https://api.github.com',
    timeZone: 'America/Chicago'
 })
 
-async function getRepoIssues(githubId, repository)
+async function getReposIssues(githubId, repository)
 {
    return await octokit.rest.issues.listForRepo({
       owner: githubId,
@@ -21,15 +20,16 @@ async function getRepoIssues(githubId, repository)
 
 function createIssueBlock(issuesList)
 {
-   let slackBlock = require('./block_templates/listIssues.json')
+   const elementTemplate = JSON.stringify(require('./block_templates/issues/issueElement.json'))
+   let slackBlock = require('./block_templates/issues/listIssues.json')
 
    for (let index = 0; index < issuesList.length; index++) {
-      let newElement = require('./block_templates/issueElement.json')
-      let issue = issuesList[index]
+      // Make a copy of the element template
+      const newElement = JSON.parse(elementTemplate);
 
       // Custommize the issue element
-      newElement.text.text     = `*${issue.title}*\n _${issue.body.substr(0, 30)}..._`
-      newElement.accessory.url = issue.url
+      newElement.text.text     = `*${issuesList[index].title}*..._`
+      newElement.accessory.url = issuesList[index].html_url
 
       //append to slack block
       slackBlock.blocks.push(newElement)
@@ -40,6 +40,6 @@ function createIssueBlock(issuesList)
 }
 
 module.exports = {
-   getRepoIssues,
+   getReposIssues,
    createIssueBlock
 }

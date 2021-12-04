@@ -1,162 +1,137 @@
 {
-   data: [
+   "status": 200,
+   "url": "https://api.github.com/repos/sergix/analyst/issues",
+   "headers": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset",
+      "cache-control": "public, max-age=60, s-maxage=60",
+      "connection": "close",
+      "content-encoding": "gzip",
+      "content-length": "2317",
+      "content-security-policy": "default-src 'none'",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Sat, 04 Dec 2021 22:06:40 GMT",
+      "etag": "W/\"6bb335f5edb4aed4fc510c392fad25cb9b5de659cd18e6839f687714af3269c4\"",
+      "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+      "server": "GitHub.com",
+      "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+      "vary": "Accept, Accept-Encoding, Accept, X-Requested-With",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "deny",
+      "x-github-media-type": "github.v3; format=json",
+      "x-github-request-id": "FD12:3B20:988BF2:1CE821B:61ABE670",
+      "x-ratelimit-limit": "60",
+      "x-ratelimit-remaining": "28",
+      "x-ratelimit-reset": "1638656756",
+      "x-ratelimit-resource": "core",
+      "x-ratelimit-used": "32",
+      "x-xss-protection": "0"
+   },
+   "data": [
       {
-       url: 'https: //api.github.com/repos/Sergix/analyst/issues/20',
-       repository_url: 'https: //api.github.com/repos/Sergix/analyst',
-       labels_url: 'https: //api.github.com/repos/Sergix/analyst/issues/20/labels{/name}',
-       comments_url: 'https: //api.github.com/repos/Sergix/analyst/issues/20/comments',
-       events_url: 'https: //api.github.com/repos/Sergix/analyst/issues/20/events',
-       html_url: 'https: //github.com/Sergix/analyst/issues/20',
-       id: 835091425,
-       node_id: 'MDU6SXNzdWU4MzUwOTE0MjU=',
-       number: 20,
-       title: 'Live Chart',
-       user: [Object
+         "url": "https://api.github.com/repos/Sergix/analyst/issues/20",
+         "repository_url": "https://api.github.com/repos/Sergix/analyst",
+         "labels_url": "https://api.github.com/repos/Sergix/analyst/issues/20/labels{/name}",
+         "comments_url": "https://api.github.com/repos/Sergix/analyst/issues/20/comments",
+         "events_url": "https://api.github.com/repos/Sergix/analyst/issues/20/events",
+         "html_url": "https://github.com/Sergix/analyst/issues/20",
+         "id": 835091425,
+         "node_id": "MDU6SXNzdWU4MzUwOTE0MjU=",
+         "number": 20,
+         "title": "Live Chart",
+         "user": {
+            "login": "ntohq",
+            "id": 11604664,
+            "node_id": "MDQ6VXNlcjExNjA0NjY0",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11604664?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ntohq",
+            "html_url": "https://github.com/ntohq",
+            "followers_url": "https://api.github.com/users/ntohq/followers",
+            "following_url": "https://api.github.com/users/ntohq/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ntohq/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/ntohq/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ntohq/subscriptions",
+            "organizations_url": "https://api.github.com/users/ntohq/orgs",
+            "repos_url": "https://api.github.com/users/ntohq/repos",
+            "events_url": "https://api.github.com/users/ntohq/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/ntohq/received_events",
+            "type": "User",
+            "site_admin": false
+         },
+         "labels": [
+            {
+               "id": 1906116605,
+               "node_id": "MDU6TGFiZWwxOTA2MTE2NjA1",
+               "url": "https://api.github.com/repos/Sergix/analyst/labels/enhancement",
+               "name": "enhancement",
+               "color": "a2eeef",
+               "default": true,
+               "description": "New feature or request"
+            },
+            {
+               "id": 2830840283,
+               "node_id": "MDU6TGFiZWwyODMwODQwMjgz",
+               "url": "https://api.github.com/repos/Sergix/analyst/labels/on-going",
+               "name": "on-going",
+               "color": "5319e7",
+               "default": false,
+               "description": ""
+            }
          ],
-       labels: [Array
+         "state": "open",
+         "locked": false,
+         "assignee": {
+            "login": "ntohq",
+            "id": 11604664,
+            "node_id": "MDQ6VXNlcjExNjA0NjY0",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11604664?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ntohq",
+            "html_url": "https://github.com/ntohq",
+            "followers_url": "https://api.github.com/users/ntohq/followers",
+            "following_url": "https://api.github.com/users/ntohq/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ntohq/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/ntohq/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ntohq/subscriptions",
+            "organizations_url": "https://api.github.com/users/ntohq/orgs",
+            "repos_url": "https://api.github.com/users/ntohq/repos",
+            "events_url": "https://api.github.com/users/ntohq/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/ntohq/received_events",
+            "type": "User",
+            "site_admin": false
+         },
+         "assignees": [
+            {
+               "login": "ntohq",
+               "id": 11604664,
+               "node_id": "MDQ6VXNlcjExNjA0NjY0",
+               "avatar_url": "https://avatars.githubusercontent.com/u/11604664?v=4",
+               "gravatar_id": "",
+               "url": "https://api.github.com/users/ntohq",
+               "html_url": "https://github.com/ntohq",
+               "followers_url": "https://api.github.com/users/ntohq/followers",
+               "following_url": "https://api.github.com/users/ntohq/following{/other_user}",
+               "gists_url": "https://api.github.com/users/ntohq/gists{/gist_id}",
+               "starred_url": "https://api.github.com/users/ntohq/starred{/owner}{/repo}",
+               "subscriptions_url": "https://api.github.com/users/ntohq/subscriptions",
+               "organizations_url": "https://api.github.com/users/ntohq/orgs",
+               "repos_url": "https://api.github.com/users/ntohq/repos",
+               "events_url": "https://api.github.com/users/ntohq/events{/privacy}",
+               "received_events_url": "https://api.github.com/users/ntohq/received_events",
+               "type": "User",
+               "site_admin": false
+            }
          ],
-       state: 'open',
-       locked: false,
-       assignee: [Object
-         ],
-       assignees: [Array
-         ],
-       milestone: null,
-       comments: 0,
-       created_at: '2021-03-18T17: 43: 08Z',
-       updated_at: '2021-03-18T17: 43: 08Z',
-       closed_at: null,
-       author_association: 'COLLABORATOR',
-       active_lock_reason: null,
-       body: '## Prop: It was recommended to add a live chart that updates itself with new data that comes in every minute.\r\n' +
-         '\r\n' +
-         '### Goal: Add live functions to start updating the apex chart.',
-       reactions: [Object
-         ],
-       timeline_url: 'https: //api.github.com/repos/Sergix/analyst/issues/20/timeline',
-       performed_via_github_app: null
-      },
-      {
-       url: 'https: //api.github.com/repos/Sergix/analyst/issues/19',
-       repository_url: 'https: //api.github.com/repos/Sergix/analyst',
-       labels_url: 'https: //api.github.com/repos/Sergix/analyst/issues/19/labels{/name}',
-       comments_url: 'https: //api.github.com/repos/Sergix/analyst/issues/19/comments',
-       events_url: 'https: //api.github.com/repos/Sergix/analyst/issues/19/events',
-       html_url: 'https: //github.com/Sergix/analyst/issues/19',
-       id: 833890486,
-       node_id: 'MDU6SXNzdWU4MzM4OTA0ODY=',
-       number: 19,
-       title: 'Clean Up Index.vue',
-       user: [Object
-         ],
-       labels: [Array
-         ],
-       state: 'open',
-       locked: false,
-       assignee: [Object
-         ],
-       assignees: [Array
-         ],
-       milestone: null,
-       comments: 0,
-       created_at: '2021-03-17T15: 08: 38Z',
-       updated_at: '2021-03-17T15: 08: 52Z',
-       closed_at: null,
-       author_association: 'COLLABORATOR',
-       active_lock_reason: null,
-       body: '# Clean Up Code\r\n' +
-         '\r\n' +
-         '### Goal\r\n' +
-         '* Clean up code in index.vue to create a more readable page\r\n' +
-         '\r\n' +
-         '### How?\r\n' +
-         '* By sorting code \r\n' +
-         '* By creating more components\r\n',
-       reactions: [Object
-         ],
-       timeline_url: 'https: //api.github.com/repos/Sergix/analyst/issues/19/timeline',
-       performed_via_github_app: null
-      },
-      {
-       url: 'https: //api.github.com/repos/Sergix/analyst/issues/13',
-       repository_url: 'https: //api.github.com/repos/Sergix/analyst',
-       labels_url: 'https: //api.github.com/repos/Sergix/analyst/issues/13/labels{/name}',
-       comments_url: 'https: //api.github.com/repos/Sergix/analyst/issues/13/comments',
-       events_url: 'https: //api.github.com/repos/Sergix/analyst/issues/13/events',
-       html_url: 'https: //github.com/Sergix/analyst/issues/13',
-       id: 738073761,
-       node_id: 'MDU6SXNzdWU3MzgwNzM3NjE=',
-       number: 13,
-       title: 'Incorrect chart labeling',
-       user: [Object
-         ],
-       labels: [Array
-         ],
-       state: 'open',
-       locked: false,
-       assignee: [Object
-         ],
-       assignees: [Array
-         ],
-       milestone: null,
-       comments: 0,
-       created_at: '2020-11-06T22: 15: 13Z',
-       updated_at: '2021-03-07T04: 06: 25Z',
-       closed_at: null,
-       author_association: 'COLLABORATOR',
-       active_lock_reason: null,
-       body: '**Depending** on the period and the interval, the chart labeling is incorrect.\r\n' +
-         " When using the candlestick chart we see that the open, close, high, low dose not display on the pop-up label; the chart's labeling -on the x-axis - incorrect; and the actual chart name could be something like Microsoft corp instead of Candlestick chart.\r\n" +
-         '![image
-         ](https: //user-images.githubusercontent.com/11604664/98419095-f3ce0a00-2049-11eb-93fd-13f8379dfeac.png)\r\n' +
-         '\r\n' +
-         '\r\n' +
-         'As for the line chart, It looks great except for chart labeling -on the x-axis- and the chart name\r\n' +
-         '![image
-         ](https: //user-images.githubusercontent.com/11604664/98419646-24fb0a00-204b-11eb-8899-5acec88a7ed0.png)\r\n',
-       reactions: [Object
-         ],
-       timeline_url: 'https: //api.github.com/repos/Sergix/analyst/issues/13/timeline',
-       performed_via_github_app: null
-      },
-      {
-       url: 'https: //api.github.com/repos/Sergix/analyst/issues/12',
-       repository_url: 'https: //api.github.com/repos/Sergix/analyst',
-       labels_url: 'https: //api.github.com/repos/Sergix/analyst/issues/12/labels{/name}',
-       comments_url: 'https: //api.github.com/repos/Sergix/analyst/issues/12/comments',
-       events_url: 'https: //api.github.com/repos/Sergix/analyst/issues/12/events',
-       html_url: 'https: //github.com/Sergix/analyst/issues/12',
-       id: 738070801,
-       node_id: 'MDU6SXNzdWU3MzgwNzA4MDE=',
-       number: 12,
-       title: 'Crazy chart scaling',
-       user: [Object
-         ],
-       labels: [Array
-         ],
-       state: 'open',
-       locked: false,
-       assignee: [Object
-         ],
-       assignees: [Array
-         ],
-       milestone: null,
-       comments: 0,
-       created_at: '2020-11-06T22: 08: 08Z',
-       updated_at: '2021-03-07T04: 06: 49Z',
-       closed_at: null,
-       author_association: 'COLLABORATOR',
-       active_lock_reason: null,
-       body: 'Zoomed in to much\r\n' +
-         '![image
-         ](https: //user-images.githubusercontent.com/11604664/98419095-f3ce0a00-2049-11eb-93fd-13f8379dfeac.png)\r\n' +
-         'Zoomed-out\r\n' +
-         '![image
-         ](https: //user-images.githubusercontent.com/11604664/98419145-0a746100-204a-11eb-8f1b-030f715072ab.png)',
-       reactions: [Object
-         ],
-       timeline_url: 'https: //api.github.com/repos/Sergix/analyst/issues/12/timeline',
-       performed_via_github_app: null
-      }
-   ]
-}
+         "milestone": null,
+         "comments": 0,
+         "created_at": "2021-03-18T17:43:08Z",
+         "updated_at": "2021-03-18T17:43:08Z",
+         "closed_at": null,
+         "author_association": "COLLABORATOR",
+         "active_lock_reason": null,
+         "body":"## Prop: It was recommended to add a live chart that 
+updates itself with new data that comes in every minute.\r\n\r\n### Goal: Add live functions to start updating the apex chart.","reactions":{"url":"https: //api.github.com/repos/Sergix/analyst/issues/20/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"timeline_url":"https://api.github.com/repos/Sergix/analyst/issues/20/timeline","performed_via_github_app":null},{"url":"https://api.github.com/repos/Sergix/analyst/issues/19","repository_url":"https://api.github.com/repos/Sergix/analyst","labels_url":"https://api.github.com/repos/Sergix/analyst/issues/19/labels{/name}","comments_url":"https://api.github.com/repos/Sergix/analyst/issues/19/comments","events_url":"https://api.github.com/repos/Sergix/analyst/issues/19/events","html_url":"https://github.com/Sergix/analyst/issues/19","id":833890486,"node_id":"MDU6SXNzdWU4MzM4OTA0ODY=","number":19,"title":"Clean Up Index.vue","user":{"login":"ntohq","id":11604664,"node_id":"MDQ6VXNlcjExNjA0NjY0","avatar_url":"https://avatars.githubusercontent.com/u/11604664?v=4","gravatar_id":"","url":"https://api.github.com/users/ntohq","html_url":"https://github.com/ntohq","followers_url":"https://api.github.com/users/ntohq/followers","following_url":"https://api.github.com/users/ntohq/following{/other_user}","gists_url":"https://api.github.com/users/ntohq/gists{/gist_id}","starred_url":"https://api.github.com/users/ntohq/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ntohq/subscriptions","organizations_url":"https://api.github.com/users/ntohq/orgs","repos_url":"https://api.github.com/users/ntohq/repos","events_url":"https://api.github.com/users/ntohq/events{/privacy}","received_events_url":"https://api.github.com/users/ntohq/received_events","type":"User","site_admin":false},"labels":[{"id":1906116605,"node_id":"MDU6TGFiZWwxOTA2MTE2NjA1","url":"https://api.github.com/repos/Sergix/analyst/labels/enhancement","name":"enhancement","color":"a2eeef","default":true,"description":"New feature or request"},{"id":2830840283,"node_id":"MDU6TGFiZWwyODMwODQwMjgz","url":"https://api.github.com/repos/Sergix/analyst/labels/on-going","name":"on-going","color":"5319e7","default":false,"description":""}],"state":"open","locked":false,"assignee":{"login":"ntohq","id":11604664,"node_id":"MDQ6VXNlcjExNjA0NjY0","avatar_url":"https://avatars.githubusercontent.com/u/11604664?v=4","gravatar_id":"","url":"https://api.github.com/users/ntohq","html_url":"https://github.com/ntohq","followers_url":"https://api.github.com/users/ntohq/followers","following_url":"https://api.github.com/users/ntohq/following{/other_user}","gists_url":"https://api.github.com/users/ntohq/gists{/gist_id}","starred_url":"https://api.github.com/users/ntohq/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ntohq/subscriptions","organizations_url":"https://api.github.com/users/ntohq/orgs","repos_url":"https://api.github.com/users/ntohq/repos","events_url":"https://api.github.com/users/ntohq/events{/privacy}","received_events_url":"https://api.github.com/users/ntohq/received_events","type":"User","site_admin":false},"assignees":[{"login":"ntohq","id":11604664,"node_id":"MDQ6VXNlcjExNjA0NjY0","avatar_url":"https://avatars.githubusercontent.com/u/11604664?v=4","gravatar_id":"","url":"https://api.github.com/users/ntohq","html_url":"https://github.com/ntohq","followers_url":"https://api.github.com/users/ntohq/followers","following_url":"https://api.github.com/users/ntohq/following{/other_user}","gists_url":"https://api.github.com/users/ntohq/gists{/gist_id}","starred_url":"https://api.github.com/users/ntohq/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ntohq/subscriptions","organizations_url":"https://api.github.com/users/ntohq/orgs","repos_url":"https://api.github.com/users/ntohq/repos","events_url":"https://api.github.com/users/ntohq/events{/privacy}","received_events_url":"https://api.github.com/users/ntohq/received_events","type":"User","site_admin":false}],"milestone":null,"comments":0,"created_at":"2021-03-17T15:08:38Z","updated_at":"2021-03-17T15:08:52Z","closed_at":null,"author_association":"COLLABORATOR","active_lock_reason":null,"body":"# Clean Up Code\r\n\r\n### Goal\r\n* Clean up code in index.vue to create a more readable page\r\n\r\n### How?\r\n* By sorting code \r\n* By creating more components\r\n","reactions":{"url":"https://api.github.com/repos/Sergix/analyst/issues/19/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"timeline_url":"https://api.github.com/repos/Sergix/analyst/issues/19/timeline","performed_via_github_app":null},{"url":"https://api.github.com/repos/Sergix/analyst/issues/13","repository_url":"https://api.github.com/repos/Sergix/analyst","labels_url":"https://api.github.com/repos/Sergix/analyst/issues/13/labels{/name}","comments_url":"https://api.github.com/repos/Sergix/analyst/issues/13/comments","events_url":"https://api.github.com/repos/Sergix/analyst/issues/13/events","html_url":"https://github.com/Sergix/analyst/issues/13","id":738073761,"node_id":"MDU6SXNzdWU3MzgwNzM3NjE=","number":13,"title":"Incorrect chart labeling","user":{"login":"ntohq","id":11604664,"node_id":"MDQ6VXNlcjExNjA0NjY0","avatar_url":"https://avatars.githubusercontent.com/u/11604664?v=4","gravatar_id":"","url":"https://api.github.com/users/ntohq","html_url":"https://github.com/ntohq","followers_url":"https://api.github.com/users/ntohq/followers","following_url":"https://api.github.com/users/ntohq/following{/other_user}","gists_url":"https://api.github.com/users/ntohq/gists{/gist_id}","starred_url":"https://api.github.com/users/ntohq/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ntohq/subscriptions","organizations_url":"https://api.github.com/users/ntohq/orgs","repos_url":"https://api.github.com/users/ntohq/repos","events_url":"https://api.github.com/users/ntohq/events{/privacy}","received_events_url":"https://api.github.com/users/ntohq/received_events","type":"User","site_admin":false},"labels":[{"id":1906116600,"node_id":"MDU6TGFiZWwxOTA2MTE2NjAw","url":"https://api.github.com/repos/Sergix/analyst/labels/bug","name":"bug","color":"d73a4a","default":true,"description":"Something isn't working"},{"id":1906116605,"node_id":"MDU6TGFiZWwxOTA2MTE2NjA1","url":"https://api.github.com/repos/Sergix/analyst/labels/enhancement","name":"enhancement","color":"a2eeef","default":true,"description":"New feature or request"},{"id":1906116607,"node_id":"MDU6TGFiZWwxOTA2MTE2NjA3","url":"https://api.github.com/repos/Sergix/analyst/labels/help%20wanted","name":"help wanted","color":"008672","default":true,"description":"Extra attention is needed"}],"state":"open","locked":false,"assignee":{"login":"ntohq","id":11604664,"node_id":"MDQ6VXNlcjExNjA0NjY0","avatar_url":"https://avatars.githubusercontent.com/u/11604664?v=4","gravatar_id":"","url":"https://api.github.com/users/ntohq","html_url":"https://github.com/ntohq","followers_url":"https://api.github.com/users/ntohq/followers","following_url":"https://api.github.com/users/ntohq/following{/other_user}","gists_url":"https://api.github.com/users/ntohq/gists{/gist_id}","starred_url":"https://api.github.com/users/ntohq/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ntohq/subscriptions","organizations_url":"https://api.github.com/users/ntohq/orgs","repos_url":"https://api.github.com/users/ntohq/repos","events_url":"https://api.github.com/users/ntohq/events{/privacy}","received_events_url":"https://api.github.com/users/ntohq/received_events","type":"User","site_admin":false},"assignees":[{"login":"ntohq","id":11604664,"node_id":"MDQ6VXNlcjExNjA0NjY0","avatar_url":"https://avatars.githubusercontent.com/u/11604664?v=4","gravatar_id":"","url":"https://api.github.com/users/ntohq","html_url":"https://github.com/ntohq","followers_url":"https://api.github.com/users/ntohq/followers","following_url":"https://api.github.com/users/ntohq/following{/other_user}","gists_url":"https://api.github.com/users/ntohq/gists{/gist_id}","starred_url":"https://api.github.com/users/ntohq/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ntohq/subscriptions","organizations_url":"https://api.github.com/users/ntohq/orgs","repos_url":"https://api.github.com/users/ntohq/repos","events_url":"https://api.github.com/users/ntohq/events{/privacy}","received_events_url":"https://api.github.com/users/ntohq/received_events","type":"User","site_admin":false},{"login":"Sergix","id":20588081,"node_id":"MDQ6VXNlcjIwNTg4MDgx","avatar_url":"https://avatars.githubusercontent.com/u/20588081?v=4","gravatar_id":"","url":"https://api.github.com/users/Sergix","html_url":"https://github.com/Sergix","followers_url":"https://api.github.com/users/Sergix/followers","following_url":"https://api.github.com/users/Sergix/following{/other_user}","gists_url":"https://api.github.com/users/Sergix/gists{/gist_id}","starred_url":"https://api.github.com/users/Sergix/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sergix/subscriptions","organizations_url":"https://api.github.com/users/Sergix/orgs","repos_url":"https://api.github.com/users/Sergix/repos","events_url":"https://api.github.com/users/Sergix/events{/privacy}","received_events_url":"https://api.github.com/users/Sergix/received_events","type":"User","site_admin":false}],"milestone":null,"comments":0,"created_at":"2020-11-06T22:15:13Z","updated_at":"2021-03-07T04:06:25Z","closed_at":null,"author_association":"COLLABORATOR","active_lock_reason":null,"body":"**Depending** on the period and the interval, the chart labeling is incorrect.\r\n When using the candlestick chart we see that the open, close, high, low dose not display on the pop-up label; the chart's labeling -on the x-axis - incorrect; and the actual chart name could be something like Microsoft 
+corp instead of Candlestick chart.\r\n![image
+         ](https: //user-images.githubusercontent.com/11604664/98419095-f3ce0a00-2049-11eb-93fd-13f8379dfeac.png)\r\n\r\n\r\nAs for the line chart, It looks great except for chart labeling -on the x-axis- and the chart name\r\n![image](https://user-images.githubusercontent.com/11604664/98419646-24fb0a00-204b-11eb-8899-5acec88a7ed0.png)\r\n","reactions":{"url":"https://api.github.com/repos/Sergix/analyst/issues/13/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"timeline_url":"https://api.github.com/repos/Sergix/analyst/issues/13/timeline","performed_via_github_app":null},{"url":"https://api.github.com/repos/Sergix/analyst/issues/12","repository_url":"https://api.github.com/repos/Sergix/analyst","labels_url":"https://api.github.com/repos/Sergix/analyst/issues/12/labels{/name}","comments_url":"https://api.github.com/repos/Sergix/analyst/issues/12/comments","events_url":"https://api.github.com/repos/Sergix/analyst/issues/12/events","html_url":"https://github.com/Sergix/analyst/issues/12","id":738070801,"node_id":"MDU6SXNzdWU3MzgwNzA4MDE=","number":12,"title":"Crazy chart scaling","user":{"login":"ntohq","id":11604664,"node_id":"MDQ6VXNlcjExNjA0NjY0","avatar_url":"https://avatars.githubusercontent.com/u/11604664?v=4","gravatar_id":"","url":"https://api.github.com/users/ntohq","html_url":"https://github.com/ntohq","followers_url":"https://api.github.com/users/ntohq/followers","following_url":"https://api.github.com/users/ntohq/following{/other_user}","gists_url":"https://api.github.com/users/ntohq/gists{/gist_id}","starred_url":"https://api.github.com/users/ntohq/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ntohq/subscriptions","organizations_url":"https://api.github.com/users/ntohq/orgs","repos_url":"https://api.github.com/users/ntohq/repos","events_url":"https://api.github.com/users/ntohq/events{/privacy}","received_events_url":"https://api.github.com/users/ntohq/received_events","type":"User","site_admin":false},"labels":[{"id":1906116600,"node_id":"MDU6TGFiZWwxOTA2MTE2NjAw","url":"https://api.github.com/repos/Sergix/analyst/labels/bug","name":"bug","color":"d73a4a","default":true,"description":"Something isn't working"},{"id":1906116605,"node_id":"MDU6TGFiZWwxOTA2MTE2NjA1","url":"https://api.github.com/repos/Sergix/analyst/labels/enhancement","name":"enhancement","color":"a2eeef","default":true,"description":"New feature or request"},{"id":1906116607,"node_id":"MDU6TGFiZWwxOTA2MTE2NjA3","url":"https://api.github.com/repos/Sergix/analyst/labels/help%20wanted","name":"help wanted","color":"008672","default":true,"description":"Extra attention is needed"},{"id":1906116613,"node_id":"MDU6TGFiZWwxOTA2MTE2NjEz","url":"https://api.github.com/repos/Sergix/analyst/labels/invalid","name":"invalid","color":"e4e669","default":true,"description":"This doesn't seem right"}],"state":"open","locked":false,"assignee":{"login":"ntohq","id":11604664,"node_id":"MDQ6VXNlcjExNjA0NjY0","avatar_url":"https://avatars.githubusercontent.com/u/11604664?v=4","gravatar_id":"","url":"https://api.github.com/users/ntohq","html_url":"https://github.com/ntohq","followers_url":"https://api.github.com/users/ntohq/followers","following_url":"https://api.github.com/users/ntohq/following{/other_user}","gists_url":"https://api.github.com/users/ntohq/gists{/gist_id}","starred_url":"https://api.github.com/users/ntohq/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ntohq/subscriptions","organizations_url":"https://api.github.com/users/ntohq/orgs","repos_url":"https://api.github.com/users/ntohq/repos","events_url":"https://api.github.com/users/ntohq/events{/privacy}","received_events_url":"https://api.github.com/users/ntohq/received_events","type":"User","site_admin":false},"assignees":[{"login":"ntohq","id":11604664,"node_id":"MDQ6VXNlcjExNjA0NjY0","avatar_url":"https://avatars.githubusercontent.com/u/11604664?v=4","gravatar_id":"","url":"https://api.github.com/users/ntohq","html_url":"https://github.com/ntohq","followers_url":"https://api.github.com/users/ntohq/followers","following_url":"https://api.github.com/users/ntohq/following{/other_user}","gists_url":"https://api.github.com/users/ntohq/gists{/gist_id}","starred_url":"https://api.github.com/users/ntohq/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ntohq/subscriptions","organizations_url":"https://api.github.com/users/ntohq/orgs","repos_url":"https://api.github.com/users/ntohq/repos","events_url":"https://api.github.com/users/ntohq/events{/privacy}","received_events_url":"https://api.github.com/users/ntohq/received_events","type":"User","site_admin":false},{"login":"Sergix","id":20588081,"node_id":"MDQ6VXNlcjIwNTg4MDgx","avatar_url":"https://avatars.githubusercontent.com/u/20588081?v=4","gravatar_id":"","url":"https://api.github.com/users/Sergix","html_url":"https://github.com/Sergix","followers_url":"https://api.github.com/users/Sergix/followers","following_url":"https://api.github.com/users/Sergix/following{/other_user}","gists_url":"https://api.github.com/users/Sergix/gists{/gist_id}","starred_url":"https://api.github.com/users/Sergix/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sergix/subscriptions","organizations_url":"https://api.github.com/users/Sergix/orgs","repos_url":"https://api.github.com/users/Sergix/repos","events_url":"https://api.github.com/users/Sergix/events{/privacy}","received_events_url":"https://api.github.com/users/Sergix/received_events","type":"User","site_admin":false}],"milestone":null,"comments":0,"created_at":"2020-11-06T22:08:08Z","updated_at":"2021-03-07T04:06:49Z","closed_at":null,"author_association":"COLLABORATOR","active_lock_reason":null,"body":"Zoomed in to much\r\n![image](https://user-images.githubusercontent.com/11604664/98419095-f3ce0a00-2049-11eb-93fd-13f8379dfeac.png)\r\nZoomed-out\r\n![image](https://user-images.githubusercontent.com/11604664/98419145-0a746100-204a-11eb-8f1b-030f715072ab.png)","reactions":{"url":"https://api.github.com/repos/Sergix/analyst/issues/12/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"timeline_url":"https://api.github.com/repos/Sergix/analyst/issues/12/timeline","performed_via_github_app":null}]}  
