@@ -33,6 +33,13 @@ app.command('/issue', async ({ command, ack, respond }) => {
    })
 });
 
+app.command('/test', async ({ command, ack, respond }) => {
+   await ack().then(() => {
+      return command.text.split()
+   }).then((args) => {
+      respond(args[0])
+   })
+});
 
 (async () => {
    // Start your app
