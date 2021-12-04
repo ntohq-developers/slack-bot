@@ -19,7 +19,7 @@ const app = new App({
 app.command('/issue', async ({ command, ack, respond }) => {
    // Acknowledge command request
    await ack().then(() => {
-      return commands.splitArgs(command.txt)
+      return commands.splitArgs(command.text)
    }).then((data) => {
       return github.getRepoIssues(data[0], data[1])
    }).then((issue) => {
