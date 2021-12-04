@@ -1,4 +1,5 @@
-const { Octokit } = require("@octokit/rest");
+const { Octokit }  = require("@octokit/rest");
+
 
 const octokit = new Octokit({
    userAgent: 'slack bot v1.0.0',
@@ -12,7 +13,8 @@ async function getRepoIssues(githubId, repository)
       owner: githubId,
       repo: repository,
    }).then((issues) => {
-      return (issues.data)
+      return (issues.data[0].url)
    })
 }
 
+module.exports = { getRepoIssues };

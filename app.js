@@ -1,7 +1,7 @@
 // Import Node Librarys
 const { App }           = require("@slack/bolt")
 const github         = require("./github")
-const commandHandler = require("./commands")
+const commands = require("./commands.js")
 
 // dotenv setup
 require("dotenv").config()
@@ -19,9 +19,9 @@ const app = new App({
 app.command('/issue', async ({ command, ack, respond }) => {
    // Acknowledge command request
    await ack().then(() => {
-      return splitArgs(command.txt)
+      return commands.splitArgs(command.txt)
    }).then((data) => {
-      return getRepoIssues(data[0], data[1])
+      return github.getRepoIssues(data[0], data[1])
    }).then((issue) => {
       respond(`<a href="${issue[0].url}">${issue[0].title}</a>`)
    });
