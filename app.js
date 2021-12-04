@@ -23,8 +23,8 @@ app.command('/issue', async ({ command, ack, respond }) => {
    }).then((data) => {
       return github.getReposIssues(data[0], data[1])
    }).then((block) => {
-      console.log(block)
-      return block
+      console.log(JSON.stringify(block))
+      return JSON.stringify(block)
    });
 });
 
