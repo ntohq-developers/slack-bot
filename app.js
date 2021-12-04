@@ -22,8 +22,6 @@ app.command('/issue', async ({ command, ack, respond }) => {
       return commands.splitArgs(command.text)
    }).then((data) => {
       return github.getRepoIssues(data[0], data[1])
-   }).then((issue) => {
-      respond(`<a href="${issue[0].url}">${issue[0].title}</a>`)
    });
 });
 

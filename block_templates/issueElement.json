@@ -1,0 +1,18 @@
+{
+   "type": "section",
+   "text": {
+      "type": "mrkdwn",
+      "text": "*Title Here*\n _Description goes here_ \n _tag1_ _tag2_"
+   },
+   "accessory": {
+      "type": "button",
+      "text": {
+         "type": "plain_text",
+         "text": "View",
+         "emoji": true
+      },
+      "value": "view_repo",
+      "url": "https://google.com",
+      "action_id": "button-action"
+   }
+}
