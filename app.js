@@ -22,22 +22,6 @@ const app = new App({
    console.log(`⚡️ Slack Bolt app is running on port ${port}!`);
 })();
 
-
-app.event("member_joined_channel", async ({ event, client }) => {
-   try {
-      // Call chat.postMessage with the built-in client
-      const result = await client.chat.postMessage({
-         channel: welcomeChannelId,
-         text: `Welcome to the team, <@${event.user.id}>! 🎉 You can introduce yourself in this channel.`
-      });
-      console.log(result);
-   }
-
-   catch (error) {
-      console.error(error);
-   }
-})
-
 // Listens to incoming messages that contain "hello"
 app.message('hello', async ({ message, say }) => {
    // say() sends a message to the channel where the event was triggered
