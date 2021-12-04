@@ -6,16 +6,13 @@ const octokit = new Octokit({
    timeZone: 'America/Chicago'
 })
 
-async function test()
+async function getRepoIssues(githubId, repository)
 {
    return await octokit.rest.issues.listForRepo({
-      owner: 'sergix',
-      repo: 'analyst',
+      owner: githubId,
+      repo: repository,
    }).then((issues) => {
-      return (issues.data[0].url)
+      return (issues.data)
    })
 }
 
-test().then((data) => {
-   console.log(data)
-})

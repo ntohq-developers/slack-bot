@@ -1,14 +1,10 @@
 // Import Node Librarys
-const { App } = require("@slack/bolt")
-const { Octokit } = require("@octokit/rest");
+const { App }           = require("@slack/bolt")
+const github         = require("./github")
+const commandHandler = require("./commands")
+
 // dotenv setup
 require("dotenv").config()
-
-const octokit = new Octokit({
-   userAgent: 'slack bot v1.0.0',
-   baseUrl: 'https://api.github.com',
-   timeZone: 'America/Chicago'
-})
 
 // Initializes your app with your bot token and signing secret
 const app = new App({
@@ -22,23 +18,13 @@ const app = new App({
 // The echo command simply echoes on command
 app.command('/issue', async ({ command, ack, respond }) => {
    // Acknowledge command request
-   await ack();
-   await octokit.rest.issues.listForRepo({
-      owner: 'sergix',
-      repo: command.text,
-   }).then((issues) => {
-      return issues.data[0].url
-   }).then((data) => {
-      respond(data);
-   })
-});
-
-app.command('/test', async ({ command, ack, respond }) => {
    await ack().then(() => {
-      return command.text.split(" ")
-   }).then((args) => {
-      respond(args[0])
-   })
+      return splitArgs(command.txt)
+   }).then((data) => {
+      return getRepoIssues(data[0], data[1])
+   }).then((issue) => {
+      respond(`<a href="${issue[0].url}">${issue[0].title}</a>`)
+   });
 });
 
 (async () => {
