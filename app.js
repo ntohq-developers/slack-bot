@@ -34,3 +34,10 @@ const app = new App({
    await app.start(process.env.PORT || port);
    console.log(`⚡️ Slack Bolt app is running on port ${port}!`);
  })();
+
+ 
+
+app.error((error) => {
+   // Check the details of the error to handle cases where you should retry sending a message or stop the app
+   console.error(error);
+ }); 
