@@ -21,9 +21,10 @@ app.command('/issue', async ({ command, ack, respond }) => {
    await ack().then(() => {
       return commands.splitArgs(command.text)
    }).then((data) => {
-      data = github.getReposIssues(data[0], data[1])
-      console.log(data)
-      return data
+      return github.getReposIssues(data[0], data[1])
+   }).then((block) => {
+      console.log(block)
+      return block
    });
 });
 
