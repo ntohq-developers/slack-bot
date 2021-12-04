@@ -13,7 +13,7 @@ async function getRepoIssues(githubId, repository)
       owner: githubId,
       repo: repository,
    }).then((issues) => {
-      return (issues.data[0].url)
+      return (issues.data)
    })
 }
 
