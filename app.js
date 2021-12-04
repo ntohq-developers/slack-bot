@@ -23,14 +23,12 @@ const app = new App({
 app.command('/issue', async ({ command, ack, respond }) => {
    // Acknowledge command request
    await ack();
-   let repoIssues = await octokit.rest.issues.listEventsForRepo({
+   let repoIssue = await octokit.rest.issues.listForRepo({
       owner: 'sergix',
-      repo:  command.text,
-    });
-   await respond(repoIssues);
- });
- 
-app.command('/get update')
+      repo: command.text,
+   });
+   await respond(repoIssue);
+});
 
 
 (async () => {
