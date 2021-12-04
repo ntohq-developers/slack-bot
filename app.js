@@ -14,16 +14,6 @@ const app = new App({
    appToken: process.env.APP_TOKEN
  });
  
- app.command("/test", async ({ command, ack, say }) => {
-   try {
-     await ack();
-     say("Yaaay! that command works!");
-   } catch (error) {
-       console.log("err")
-     console.error(error);
-   }
-});
-
 
  (async () => {
    const port = process.env.PORT || 3000
@@ -33,7 +23,11 @@ const app = new App({
    console.log(`⚡️ Slack Bolt app is running on port ${port}!`);
  })();
 
- 
+ // Listens to incoming messages that contain "hello"
+app.message('hello', async ({ message, say }) => {
+   // say() sends a message to the channel where the event was triggered
+   await say(`Hey there <@${message.user}>!`);
+ });
 
 app.error((error) => {
    // Check the details of the error to handle cases where you should retry sending a message or stop the app
