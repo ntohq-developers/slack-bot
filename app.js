@@ -4,16 +4,14 @@ const { App }     = require("@slack/bolt")
 // dotenv setup
 require("dotenv").config()
 
-// Define all constant and global variables
-const botToken    = process.env.BOT_TOKEN
-const slackSecret = process.env.SLACK_SECRET 
 
 
 // Initializes your app with your bot token and signing secret
 const app = new App({
-   token: botToken,
-   signingSecret: slackSecret,
+   token: process.env.BOT_TOKEN,
+   signingSecret: process.env.SLACK_SECRET ,
    socketMode: true,
+   appToken: process.env.APP_TOKEN
  });
  
  app.command("/test", async ({ command, ack, say }) => {
