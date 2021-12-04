@@ -20,10 +20,11 @@ const app = new App({
    console.log(`⚡️ Slack Bolt app is running!`);
 })();
 
-app.message('hello', async ({ message, say }) => {
+// This will match any message that contains 👋
+app.message(':wave:', async ({ message, say }) => {
    await say(`Hello, <@${message.user}>`);
- });
-
+});
+ 
 app.error((error) => {
    // Check the details of the error to handle cases where you should retry sending a message or stop the app
    console.error(error);
