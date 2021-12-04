@@ -26,9 +26,9 @@ app.command('/issue', async ({ command, ack, respond }) => {
    let repoIssue = await octokit.rest.issues.listForRepo({
       owner: 'sergix',
       repo: command.text,
-   })
+   }).data
    console.log(repoIssue)
-   await respond(typeof(repoIssue));
+   await respond(repoIssue[0].toString());
 });
 
 
