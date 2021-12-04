@@ -10,13 +10,13 @@ require("dotenv").config()
 const app = new App({
    token: process.env.BOT_TOKEN,
    signingSecret: process.env.SLACK_SECRET,
-   socketMode: false,
+   port: process.env.PORT
 });
 
 
 (async () => {
    // Start your app
-   await app.start(process.env.PORT || 3000);
+   await app.start();
    console.log(`⚡️ Slack Bolt app is running!`);
 })();
 
