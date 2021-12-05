@@ -16,6 +16,7 @@ const app = new App({
 });
 
 app.event('team_join', async ({ event, client }) => {
+   console.log("New User")
    try {
      const result = await client.chat.postMessage({
        channel: announcmentsId,
