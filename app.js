@@ -3,8 +3,8 @@ const { App }           = require("@slack/bolt")
 const github         = require("./github")
 const commands = require("./commands.js")
 
-const errorBlock = require('./block_templates/error/message.json')
-
+const errorBlock   = require('./block_templates/error/message.json')
+const announcmentsId = "C01CV401U23"
 // dotenv setup
 require("dotenv").config()
 
@@ -15,7 +15,18 @@ const app = new App({
    port: process.env.PORT
 });
 
-
+app.event('team_join', async ({ event, client }) => {
+   try {
+     const result = await client.chat.postMessage({
+       channel: announcmentsId,
+       text: `Welcome to the team, <@${event.user.id}>! 🎉 You can introduce yourself in this channel.`
+     });
+     console.log(result);
+   }
+   catch (error) {
+     console.error(error);
+   }
+ });
 
 // The echo command simply echoes on command
 app.command('/issue', async ({ command, ack, say, respond }) => {
