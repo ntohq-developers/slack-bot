@@ -21,7 +21,7 @@ async function getReposIssues(githubId, repository)
 function createIssueBlock(issuesList)
 {
    const elementTemplate = JSON.stringify(require('./block_templates/issues/issueElement.json'))
-   let slackBlock = require('./block_templates/issues/listIssues.json')
+   let slackBlock = JSON.parse(JSON.stringify(require('./block_templates/issues/listIssues.json')))
 
    for (let index = 0; index < issuesList.length; index++) {
       // Make a copy of the element template
