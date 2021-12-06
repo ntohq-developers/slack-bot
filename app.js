@@ -64,7 +64,10 @@ app.command('/issue', async ({ command, ack, say, respond }) => {
       await ack().then(() => {
          return commands.splitArgs(command.text)
       }).then((args) => {
-         return GetRepoIssues(args)
+         return GetRepoIssues(args).catch((err) => {
+            console.log(err)
+            respond(errorBlock)
+         })
       }).then((block) => {
          say(block)
       });
