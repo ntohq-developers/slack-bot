@@ -6,7 +6,7 @@ const octokit = new Octokit({
    timeZone: 'America/Chicago'
 })
 
-async function getReposIssues(githubId, repository)
+async function GetUsersReposIssues(githubId, repository)
 {
    return await octokit.rest.issues.listForRepo({
       owner: githubId,
@@ -14,11 +14,11 @@ async function getReposIssues(githubId, repository)
    }).then((issues) => {
       return (issues.data)
    }).then((data) => {
-      return createIssueBlock(data)
+      return CreateIssueBlock(data)
    })
 }
 
-function createIssueBlock(issuesList)
+function CreateIssueBlock(issuesList)
 {
    const elementTemplate = JSON.stringify(require('./block_templates/issues/issueElement.json'))
    let slackBlock = JSON.parse(JSON.stringify(require('./block_templates/issues/listIssues.json')))
@@ -40,6 +40,6 @@ function createIssueBlock(issuesList)
 }
 
 module.exports = {
-   getReposIssues,
-   createIssueBlock
+   GetUsersReposIssues,
+   CreateIssueBlock
 }

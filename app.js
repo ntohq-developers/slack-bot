@@ -1,10 +1,10 @@
 // Import Node Librarys
-const { App }           = require("@slack/bolt")
+const { App }        = require("@slack/bolt")
 const github         = require("./github")
-const commands = require("./commands.js")
-
-const errorBlock   = require('./block_templates/error/message.json')
+const commands       = require("./commands.js")
+const errorBlock     = require('./block_templates/error/message.json')
 const announcmentsId = "C01CV401U23"
+
 // dotenv setup
 require("dotenv").config()
 
@@ -15,14 +15,42 @@ const app = new App({
    port: process.env.PORT
 });
 
+/**********************************************************************/
+/*                             Prototypes                             */
+/**********************************************************************/
+async function GetRepoIssues(args)
+{
+   let flag     = args[0] // All the flag for the issue command
+   let owner    = args[1] // The name of the owner
+   let repoName = args[2] // The name of the repo
+   let response           // Will contain the finale data or an error
+
+   if(flag == 'o') {
+      response = new Error("This command cannot fetch organization repos")
+   }
+   else {  
+      if(flag =='u') {
+         response = await github.GetUsersReposIssues(owner, repoName)
+      }
+      else {
+         response = new Error("Something went wrong")
+         console.log(response)
+      }
+   }
+
+   return response
+}
+
+/**********************************************************************/
+/*              App Events, Message Response, and Commands            */
+/**********************************************************************/
 app.event('team_join', async ({ event, client }) => {
    console.log("New User")
    try {
      const result = await client.chat.postMessage({
        channel: announcmentsId,
-       text: `Welcome to the team, <@${event.user.id}>! 🎉 You can introduce yourself in this channel.`
+       text: `Welcome to the team, <@${event.user.id}>! 🎉`
      });
-     console.log(result);
    }
    catch (error) {
      console.error(error);
@@ -35,8 +63,8 @@ app.command('/issue', async ({ command, ack, say, respond }) => {
    {
       await ack().then(() => {
          return commands.splitArgs(command.text)
-      }).then((data) => {
-         return github.getReposIssues(data[0], data[1])
+      }).then((args) => {
+         return GetRepoIssues(args)
       }).then((block) => {
          say(block)
       });
