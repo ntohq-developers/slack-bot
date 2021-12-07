@@ -37,6 +37,7 @@ async function GetRepoIssues(args)
       }
    }
 
+   console.debug("DEBUG/app.js ln40 : " + response)
    return response
 }
 
