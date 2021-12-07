@@ -25,6 +25,8 @@ async function GetRepoIssues(args)
    let repoName = args[2] // The name of the repo
    let response           // Will contain the finale data or an error
 
+   console.log(`Args ${flags} : ${owner} : ${repoName}`)
+
    if(flag == 'o') {
       response = "This is feture is not compatiable"
    }
