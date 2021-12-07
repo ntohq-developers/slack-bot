@@ -1,9 +1,9 @@
-function splitArgs(args, splitBy = " ")
+function SplitArgs(args, splitBy = " ")
 {
    return args.split(splitBy)
 }
 
-function flagToChar(flag)
+function FlagToChar(flag)
 {
    // find the flag's first character after the dash
    flagCharLocation = flag.search('-') + 1
@@ -12,9 +12,14 @@ function flagToChar(flag)
    return flag.slice(flagCharLocation, flagCharLocation + 1).toLowerCase()
 }
 
-function hasMultipleArgs(args, minCountOfArgs=3)
+function HasMultipleArgs(args, minCountOfArgs=3)
 {
    return (args.length > minCountOfArgs && typeof (args) == 'object')
 }
 
-module.exports = { splitArgs, hasMultipleArgs };
+module.exports = { 
+   SplitArgs, 
+   FlagToChar,
+   HasMultipleArgs
+
+};

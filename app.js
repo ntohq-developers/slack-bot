@@ -43,6 +43,15 @@ async function GetRepoIssues(args)
    return response
 }
 
+function CleanArgs(args)
+{
+   args = commands.SplitArgs(args)
+
+   args[0] = commands.FlagToChar(args[0])
+
+   return args
+}
+
 /**********************************************************************/
 /*              App Events, Message Response, and Commands            */
 /**********************************************************************/
@@ -64,7 +73,7 @@ app.command('/issue', async ({ command, ack, say, respond }) => {
    try
    {
       await ack().then(() => {
-         return commands.splitArgs(command.text)
+         return CleanArgs(command.text)
       }).then((args) => {
          return GetRepoIssues(args)
       }).then((block) => {
