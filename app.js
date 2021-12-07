@@ -26,15 +26,14 @@ async function GetRepoIssues(args)
    let response           // Will contain the finale data or an error
 
    if(flag == 'o') {
-      response = new Error("This command cannot fetch organization repos")
+      response = "This is feture is not compatiable"
    }
    else {  
       if(flag =='u') {
          response = await github.GetUsersReposIssues(owner, repoName)
       }
       else {
-         response = new Error("Something went wrong")
-         console.log(response)
+         response = "Somtheing went wrong"
       }
    }
 
@@ -64,10 +63,7 @@ app.command('/issue', async ({ command, ack, say, respond }) => {
       await ack().then(() => {
          return commands.splitArgs(command.text)
       }).then((args) => {
-         return GetRepoIssues(args).catch((err) => {
-            console.log(err)
-            respond(errorBlock)
-         })
+         return GetRepoIssues(args)
       }).then((block) => {
          say(block)
       });
